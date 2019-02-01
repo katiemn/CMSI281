@@ -342,37 +342,3 @@ public class LinkedYarn implements LinkedYarnInterface {
         }
     }
 }
-
-/** 
-In general, I found that the linked list implementation of yarns was 
-easier to program. However, since we first completed this problem as 
-a sequential list it may have felt easier because I had seen it once 
-before. However, in regards to specific operations, removing strings 
-from a linked list felt simpler. It was much easier to simply repair 
-references in a linked list when removing a node, rather than having 
-to fill in missing strands with other data to serve as a placeholder. 
-On the other hand, locating strings was simpler in a sequential list 
-than in a linked one. This was due to the fact that random access in 
-sequential lists made it much easier to look through all of the data,
-but an entire separate iterator class had to be created to allow users
-to look through the data in linked lists. Similarly, the private 
-method that I created in each of these implementations to find a 
-particular string so that it could be removed or added to was easier 
-in the sequential list implementation due to random access as well. 
-
-Beyond the simplicity of programming one implementation over the 
-other, there many actual scenarios where using a specific 
-implementation would be more practical. For example, if one were to 
-constantly be having to reference all of the data, then using a 
-sequential list would be more effective, especially if the strands
-being looked at were not right next to each other. In this case, 
-utilizing a sequential list would be better due to the random access 
-that the sequential implementation provides. This makes it simple to 
-see any element of the list where using a linked list would require 
-iterating through each string in the other that they were added using 
-the next and previous methods of the iterator class. In another 
-scenario, if there was a lot of data that had to be added then the 
-linked list would be more practical. This is because the sequential 
-list can only accommodate 100 strands where there is not a limit on 
-the number of nodes that can be stored in a linked list. 
-*/
